@@ -31,13 +31,16 @@ Clone this repository to your local machine:
 git clone https://github.com/BekBrace/weather_app_pyramid_fw/tree/main
 
 Navigate to the project directory:
+```console
 cd weahter_app_pyramid_fw
-
+```
 Create a virtual environment and activate it (recommended):
 pipenv shell
 
 Install the required dependencies using pipenv:
+```console
 pipenv install requests pyramid cookiecutter
+```
 
 ```Cookiecutter is a popular tool for creating project templates in Python. It allows you to create project skeletons from predefined templates quickly. If you want to create a Pyramid web application using Cookiecutter, you can use a Cookiecutter template specifically designed for Pyramid applications. One such template is the "cookiecutter-pyramid" template.```
 
@@ -48,11 +51,13 @@ Create a profile, get your API key from https://openweathermap.org
 Open the weatherapp/views.py file and replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key.
 
 Make your application available for Dev and Testing:
+```console
 python setup.py develop
-
+```
 Start the Pyramid application:
+```console
 pserve development.ini --reload
-
+```
 Usage
 After installing and starting the application, you can access it by opening a web browser and navigating to http://localhost:6543/. You will see a simple web page that allows you to enter a city name and retrieve its weather information.
 
