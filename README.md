@@ -4,68 +4,73 @@
 
 🌦️ **Weather Application Powered by Pyramid Framework for Python** 🐍🔼
 
-## Project Description
-
 Experience the magic of the Pyramid Framework for Python with our Weather App! This web application empowers users to check real-time weather conditions for any city, providing essential data such as temperature, weather description (e.g., sunny, cloudy, rainy), humidity, pressure, and wind speed. Users can simply input a city name, and the app seamlessly fetches and displays the weather information, leveraging data from OpenWeatherMap.
 
-**Key features of the Weather App:**
+Key features of the Weather App:
 
-- **Real-Time Data**: The app fetches up-to-date weather data for the specified city, ensuring precision and currency.
+Real-Time Data: The app fetches up-to-date weather data for the specified city, ensuring precision and currency.
 
-- **User-Friendly**: Crafted with user-friendliness in mind, the interface boasts an intuitive form for effortlessly entering the city name.
+User-Friendly: Crafted with user-friendliness in mind, the interface boasts an intuitive form for effortlessly entering the city name.
 
-- **Weather Icons**: Visual icons make it a breeze for users to grasp weather conditions at a glance, all thanks to the Pyramid Framework's flexibility.
+Weather Icons: Visual icons make it a breeze for users to grasp weather conditions at a glance, all thanks to the Pyramid Framework's flexibility.
 
-- **Customization**: Personalize your experience! Users can easily customize the city they want to check the weather for.
+Customization: Personalize your experience! Users can easily customize the city they want to check the weather for.
 
 The Weather App is your go-to tool for swiftly checking the weather conditions for a specific location, be it for travel planning, daily routines, or simply staying informed about the ever-changing weather.
 
-**Technologies Used:**
+Technologies Used:
 
-- Python
-- Pyramid (for the web application)
-- Jinja2 (for rendering HTML templates)
-- OpenWeatherMap API (for weather data)
+Python
+Pyramid (for the web application)
+Jinja2 (for rendering HTML templates)
+OpenWeatherMap API (for weather data)
 
-## Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+```Installation```
+Clone this repository to your local machine:
+git clone https://github.com/BekBrace/weather_app_pyramid_fw/tree/main
 
-## About
+Navigate to the project directory:
+cd weahter_app_pyramid_fw
 
-In this section, we provide a brief overview of our project, highlighting its goals, target audience, and the distinctive role of the powerful Pyramid Framework.
+Create a virtual environment and activate it (recommended):
+pipenv shell
 
-## Getting Started
+Install the required dependencies using pipenv:
+pipenv install requests pyramid cookiecutter
+```Cookiecutter is a popular tool for creating project templates in Python. It allows you to create project skeletons from predefined templates quickly. If you want to create a Pyramid web application using Cookiecutter, you can use a Cookiecutter template specifically designed for Pyramid applications. One such template is the "cookiecutter-pyramid" template.```
 
-Embark on your journey with our project, starting with step-by-step instructions to set up your environment locally. We'll guide you through the prerequisites and installation steps, making it a seamless experience for Pyramid Framework enthusiasts.
+Configure your OpenWeatherMap API key:
 
-### Prerequisites
+Create a profile, get your API key from https://openweathermap.org
 
-Before diving into the project, ensure that you have the necessary software, libraries, and tools installed. We'll walk you through the essentials to get you started.
+Open the weatherapp/views.py file and replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key.
 
-### Installation
+Make your application available for Dev and Testing:
+python setup.py develop
 
-Unlock the full potential of the Pyramid Framework with our comprehensive installation guide. We'll guide you through configuring and running the project, ensuring you're up and running smoothly.
+Start the Pyramid application:
+pserve development.ini --reload
 
-## Usage
+Usage
+After installing and starting the application, you can access it by opening a web browser and navigating to http://localhost:6543/. You will see a simple web page that allows you to enter a city name and retrieve its weather information.
 
-Learn how to harness the power of our Weather App with our in-depth usage guide. We provide examples and instructions for users to interact with the application, enriched with code snippets and screenshots for a richer experience.
+How it Works
+This Pyramid application consists of two views defined in the weatherapp/views.py file:
 
-## Contributing
+home: This view renders the home page, where users can enter a city name.
 
-Join our community of Pyramid Framework enthusiasts and contribute to the project's growth. We welcome code contributions, bug reports, and feature requests. Our guidelines make it easy for you to get involved and make a meaningful impact.
+weather: This view handles the weather information retrieval. It sends a request to the OpenWeatherMap API with the specified city name, and then it parses the JSON response to extract relevant weather data such as temperature, description, humidity, pressure, and wind speed. The weather data is then passed to the template for rendering.
 
-## License
+Dependencies
+This application relies on the following Python libraries and frameworks:
 
-This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
+Pyramid: A Python web framework.
+Requests: A Python library for making HTTP requests.
+Configuration
+The configuration for the Pyramid application is stored in the development.ini file. You can customize the settings such as the server port, host, and database connection if needed.
 
-## Acknowledgments
-
-Our project wouldn't have been possible without the support, libraries, and resources from these outstanding individuals and communities. We're thankful for their contributions and guidance.
+Credits
+This application was created by [Your Name].
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
