@@ -38,6 +38,7 @@ pipenv shell
 
 Install the required dependencies using pipenv:
 pipenv install requests pyramid cookiecutter
+
 ```Cookiecutter is a popular tool for creating project templates in Python. It allows you to create project skeletons from predefined templates quickly. If you want to create a Pyramid web application using Cookiecutter, you can use a Cookiecutter template specifically designed for Pyramid applications. One such template is the "cookiecutter-pyramid" template.```
 
 Configure your OpenWeatherMap API key:
