@@ -2,7 +2,7 @@
 
 This is a Weather Application coded using the Pyramid Framework for Python.
 
-``` - | Bek Brace Channel Video Tutorial | in red```
+``` - | Bek Brace Channel Video Tutorial | ```
 
 ## Project Description
 
