@@ -32,7 +32,7 @@ git clone https://github.com/BekBrace/weather_app_pyramid_fw/tree/main
 
 Navigate to the project directory:
 ```console
-cd weahter_app_pyramid_fw
+cd weather_app_pyramid_fw
 ```
 Create a virtual environment and activate it (recommended):
 pipenv shell
