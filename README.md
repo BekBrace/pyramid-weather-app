@@ -12,7 +12,7 @@ Real-Time Data: The app fetches up-to-date weather data for the specified city, 
 
 User-Friendly: Crafted with user-friendliness in mind, the interface boasts an intuitive form for effortlessly entering the city name.
 
-Weather Icons: Visual icons make it a breeze for users to grasp weather conditions at a glance, all thanks to the Pyramid Framework's flexibility.
+Weather Icons(in process): Visual icons make it a breeze for users to grasp weather conditions at a glance, all thanks to the Pyramid Framework's flexibility.
 
 Customization: Personalize your experience! Users can easily customize the city they want to check the weather for.
 
