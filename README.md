@@ -1,4 +1,4 @@
-``` | Bek Brace Channel Video Tutorial | ```
+``` | Bek Brace Channel Video Tutorial | Video Tutorial for November 2023 ```
 
 # weather_app_pyramid_fw
 
