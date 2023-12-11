@@ -28,6 +28,7 @@ OpenWeatherMap API (for weather data)
 
 ```Installation```
 Clone this repository to your local machine:
+
 git clone https://github.com/BekBrace/weather_app_pyramid_fw/tree/main
 
 Navigate to the project directory:
